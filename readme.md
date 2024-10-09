@@ -1,52 +1,3 @@
-# Vefforritun 1, 2024: Verkefni 7, JS #1
-
-## Markmið
-
-- Búa til JavaScript forrit sem notar föll, flæðistýringar og ítranir.
-- Nota strengi og tölur í JavaScript.
-- Nota fylki og hluti í JavaScript.
-
-## Grunnur
-
-Gefinn er grunnur að verkefni:
-
-- `package.json` með:
-  - skilgreindum dependency-ium: `browser-sync`, `concurrently` og `cpy-cli`.
-  - NPM scripts sem keyra upp „dev“ og „build“.
-- `package-lock.json` skrá sem skilgreinir nákvæmlega hvaða dependency eru notuð _fyrir_ dependency-in okkar
-- `index.html` með leiðbeiningum og tengingu við `scripts.js`.
-- `.gitignore` sem passar upp á að `node_modules` mappan sé ekki geymd í git.
-- `scripts.js` með grunni að forriti, athugasemdir og tillögur að útfærslum eru í skjalinu.
-
-Skjölun á nokkrum föllum og breytum sem notar [`jsdoc`](https://jsdoc.app/).
-
-### NPM
-
-Til að byrja að vinna verkefnið þarf að sækja það frá GitHub og keyra NPM:
-
-```bash
-# Inni í möppu sem á að geyma verkefnið
-git clone https://github.com/vefforritun/vef1-2024-v7.git
-# eða
-git clone git@github.com:vefforritun/vef1-2024-v7.git
-
-# Förum inn í möppu
-cd vef1-2024-v7
-
-# Sækjum öll dependency með NPM
-npm install
-
-# Keyrum NPM script fyrir development
-npm run dev
-```
-
-Áður en skilað er þarf að breyta remote í þitt eigið repo:
-
-```bash
-git remote remove origin
-git remote add origin <slóð á þitt GitHub repo>
-```
-
 ## Virkni
 
 Setja upp virkni sem greinir strengi og gefur ýmsar upplýsingar um þá. Notkun á forritinu er í gegnum `console` í vafra, sjá lýsingu í `index.html`, en útfæra skal gefin föll (sjá nánar í athugasemdum) í `scripts.js`:
@@ -121,10 +72,6 @@ Skila skal verkefninu keyrandi á Netlify. Gefið er `build` script í `package.
 - 20% Leiðbeint ferli útfært gegnum `start` fallið.
 - 20% Prófanir á föllum.
 
-## Sett fyrir
-
-Verkefni sett fyrir mánudaginn 7. október 2024.
-
 ## Skil
 
 Skila skal í Canvas, seinasta lagi fyrir lok dags fimmtudaginn 17. október 2024.
@@ -141,14 +88,4 @@ Skilaboð skulu innihalda:
 
 Skila má eins oft og þið viljið þar til skilafrestur rennur út.
 
-## Einkunn
 
-Leyfilegt er að ræða, og vinna saman að verkefni en **skrifið ykkar eigin lausn**. Ef tvær eða fleiri lausnir eru mjög líkar þarf að færa rök fyrir því, annars munu allir hlutaðeigandi hugsanlega fá 0 fyrir verkefnið.
-
-Ef stórt mállíkan (LLM, „gervigreind“, t.d. ChatGTP) er notað til að skrifa part af lausn skal taka það fram. [Sjá nánar á upplýsingasíða um gervigreind hjá HÍ](https://gervigreind.hi.is/).
-
-Sett verða fyrir tíu minni verkefni þar sem átta bestu gilda 5% hvert, samtals 40% af lokaeinkunn.
-
-Sett verða fyrir tvö hópverkefni þar sem hvort um sig gildir 10%, samtals 20% af lokaeinkunn.
-
-> Útgáfa 0.1
